@@ -77,7 +77,7 @@ function draw() {
     stone.show();
     var pos = stone.body.position;
     
-    //var distance = dist(zombie.position.x, zombie.position.y, pos.x, pos.y);
+    var distance = dist(zombie.position.x, zombie.position.y, pos.x, pos.y);
     //var distance = dist(zombie.position.x, zombie.position.y);
     //var distance = dist(pos.x, pos.y);
     //var distance = dist(zombie, pos);
@@ -90,7 +90,7 @@ function draw() {
       collided = true;
     }*/
 
-    /*if (distance <= 50) {
+    if (distance <= 50) {
       zombie.velocityX = 0;
       Matter.Body.setVelocity(stone.body, { x: 10, y: -10 });
       zombie.Image("sad");
